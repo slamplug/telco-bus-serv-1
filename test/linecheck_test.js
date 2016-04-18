@@ -21,7 +21,7 @@ describe('line-characteristics tests', function() {
 
     it('should find broadband available', function() {
         console.log('****** running test...');
-        var result = request('GET', "http://localhost:3000/linecheck?cli=01630656588&postcode=B772LY");
+        var result = request('GET', "http://localhost:3000/linecheck?cli=01630656588&postcode=TF93DJ");
         console.log(result.getBody());
         console.log(result.statusCode);
 

@@ -1,0 +1,51 @@
+200 OK
+
+{
+  "addressDetail": {
+    "postCodeValidOutputAddress": [
+      {
+        "buildingName": "Cherry Gables",
+        "street": "Clive Road",
+        "postTown": "Market Drayton",
+        "county": "Shropshire",
+        "postCode": "TF9 3DJ",
+        "alk": "A00016283304",
+        "exchangeCode": "MD",
+        "qualifier": "Gold",
+        "postcodeValidationResult": "true"
+      },
+      {
+        "buildingName": "Fremar",
+        "street": "Clive Road",
+        "postTown": "Market Drayton",
+        "county": "Shropshire",
+        "postCode": "TF9 3DJ",
+        "alk": "A00060301958",
+        "exchangeCode": "MD",
+        "qualifier": "Gold",
+        "postcodeValidationResult": "true"
+      },
+      {
+        "buildingName": "Holly Cottage",
+        "street": "Clive Road",
+        "postTown": "Market Drayton",
+        "postCode": "TF9 3DJ",
+        "alk": "A00016283289",
+        "exchangeCode": "MD",
+        "qualifier": "Gold",
+        "postcodeValidationResult": "true"
+      },
+      {
+        "buildingName": "Jomila",
+        "street": "Clive Road",
+        "postTown": "Market Drayton",
+        "county": "Shropshire",
+        "postCode": "TF9 3DJ",
+        "alk": "A15097631889",
+        "exchangeCode": "MD",
+        "qualifier": "Gold",
+        "postcodeValidationResult": "true"
+      }
+    ]
+  }
+}

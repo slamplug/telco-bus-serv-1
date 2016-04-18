@@ -13,9 +13,18 @@ router.get('/', function(req, res, next) {
     });
 
     var lcOptions = {
-        host: config.get('lineCheckHostname'),
-        path: '/telco__tt--line-characteristics-adaptor/v1/line-characteristics?' + lcqParams,
+        host: config.get('lineCheckServiceHostname'),
+        path: '/telco__tt--line-characteristics-adaptor/v1/line-characteristics?' + lcqParams
     };
+
+    var amParams = qs.stringify({
+        postcode: req.query.postcode
+    });
+
+    var amOptions = {
+        host: config.get('addressMatchingServiceHostname'),
+        path: '/telco__tt--address-matching-adaptor/v1/get-available-addresses?' + amParams
+    }
 
     //console.log('NODE_ENV: ' + config.util.getEnv('NODE_ENV'));
     //console.log(lcOptions.host + lcOptions.path);
@@ -29,12 +38,13 @@ router.get('/', function(req, res, next) {
             request(url, function(error, response, body) {
                 callback(error, body)
             })
-        }/*,
+        },
         callTwo: function(callback) {
-            request("http://google.com", function(error, response, body) {
+            var url = amOptions.host + amOptions.path
+            request(url, function(error, response, body) {
                 callback(error, body)
             })
-        }*/
+        }
     }, function(err, results) {
         if (err) {
             res.status(500)
@@ -46,9 +56,10 @@ router.get('/', function(req, res, next) {
             // Merge the results and stuff
 
             //var lcResponse = JSON.parse(results.callOne);
-            //console.log(results.callOne);
+            console.log(results.callOne);
             //console.log(results.callOne)
-            //console.log(results.callTwo)
+            console.log(results.callTwo)
+
             res.send(results.callOne);
             //res.send(JSON.stringify({
             //    cli: req.query.cli,

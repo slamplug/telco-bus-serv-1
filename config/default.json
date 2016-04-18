@@ -1,3 +1,4 @@
 {
-  "lineCheckHostname": "https://www.secure.first-utility.com"
+  "lineCheckServiceHostname": "https://www.secure.first-utility.com",
+  "addressMatchingServiceHostname": "https://www.secure.first-utility.com"
 }

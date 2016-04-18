@@ -2,7 +2,7 @@
 
 ##  Clone repository
 
-##  run to install node_modules_
+##  run to install node modules
 
 `npm install`
 

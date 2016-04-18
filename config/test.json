@@ -1,3 +1,4 @@
 {
-  "lineCheckHostname": "http://localhost:7777"
+  "lineCheckServiceHostname": "http://localhost:7777",
+  "addressMatchingServiceHostname": "http://localhost:7777"
 }
