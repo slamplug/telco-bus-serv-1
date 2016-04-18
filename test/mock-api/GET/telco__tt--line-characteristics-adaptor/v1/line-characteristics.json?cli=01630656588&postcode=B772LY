@@ -1,0 +1,27 @@
+200 OK
+
+{
+  "exchangeDetails": {
+    "exchangeState": "LIVE",
+    "exchangeCapacity": "G"
+  },
+  "serviceIncompatibility": null,
+  "estimatedSpeedInformation": [
+    {
+      "estimatedSpeedInformationType": "STANDARD",
+      "estimatedAnnexADownstreamSpeed": "16097",
+      "estimatedAnnexAMaxRange": "19304",
+      "estimatedAnnexAMinRange": "9695",
+      "minThresholdAnnexA": "7431",
+      "estimatedAnnexMDownstreamSpeed": "14097",
+      "estimatedAnnexMUpstreamSpeed": "2000"
+    }
+  ],
+  "telephoneNumber": "01630656588",
+  "accessLineID": "01630656588",
+  "accessLineStatus": "BT_LIVE",
+  "postcode": "B77 2LY",
+  "postcodeMatch": "NO",
+  "numberRangeHolder": "BT",
+  "numberPortingInformation": "NOT_SET"
+}
